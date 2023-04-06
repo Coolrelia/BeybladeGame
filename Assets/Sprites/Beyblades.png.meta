@@ -1,0 +1,1660 @@
+fileFormatVersion: 2
+guid: fbc84903bd5d4de4e81bef5e422a3b9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6436927876565109008
+    second: Beyblades_0
+  - first:
+      213: 4778247185231904884
+    second: Beyblades_1
+  - first:
+      213: -3740718930754036979
+    second: Beyblades_2
+  - first:
+      213: 7213181355338806452
+    second: Beyblades_3
+  - first:
+      213: 1558432067738529346
+    second: Beyblades_4
+  - first:
+      213: 6115553670806446433
+    second: Beyblades_5
+  - first:
+      213: 6937677347920961289
+    second: Beyblades_6
+  - first:
+      213: -969163399879624222
+    second: Beyblades_7
+  - first:
+      213: 4655377644717188789
+    second: Beyblades_8
+  - first:
+      213: -1370823641528898719
+    second: Beyblades_9
+  - first:
+      213: 6237665976703518473
+    second: Beyblades_10
+  - first:
+      213: -7382155707831029119
+    second: Beyblades_11
+  - first:
+      213: 1923698691788857445
+    second: Beyblades_12
+  - first:
+      213: -3196342124513527561
+    second: Beyblades_13
+  - first:
+      213: -4889505725435357541
+    second: Beyblades_14
+  - first:
+      213: 7042238159012905442
+    second: Beyblades_15
+  - first:
+      213: 2303621847304494038
+    second: Beyblades_16
+  - first:
+      213: -5478511366106048055
+    second: Beyblades_17
+  - first:
+      213: 473134192656868114
+    second: Beyblades_18
+  - first:
+      213: 300209303773708485
+    second: Beyblades_19
+  - first:
+      213: -1144239072511673913
+    second: Beyblades_20
+  - first:
+      213: -7031243800876131468
+    second: Beyblades_21
+  - first:
+      213: -5732516930656522077
+    second: Beyblades_22
+  - first:
+      213: -3603268418064768915
+    second: Beyblades_23
+  - first:
+      213: -4487799480180262810
+    second: Beyblades_24
+  - first:
+      213: -1353312813541101305
+    second: Beyblades_25
+  - first:
+      213: 5211421583982843820
+    second: Beyblades_26
+  - first:
+      213: -2201688312938282186
+    second: Beyblades_27
+  - first:
+      213: 7301942325744041589
+    second: Beyblades_28
+  - first:
+      213: -5987652617032807784
+    second: Beyblades_29
+  - first:
+      213: 1399340301928648090
+    second: Beyblades_30
+  - first:
+      213: 8634211481785404289
+    second: Beyblades_31
+  - first:
+      213: 4523104944046539354
+    second: Beyblades_32
+  - first:
+      213: -2868129609144024511
+    second: Beyblades_33
+  - first:
+      213: -7751088362624535441
+    second: Beyblades_34
+  - first:
+      213: 7972323859395539990
+    second: Beyblades_35
+  - first:
+      213: 6164942333137614442
+    second: Beyblades_36
+  - first:
+      213: 4748366698309647944
+    second: Beyblades_37
+  - first:
+      213: -3480731594406189187
+    second: Beyblades_38
+  - first:
+      213: -139537299319928010
+    second: Beyblades_39
+  - first:
+      213: -639449858360040787
+    second: Beyblades_40
+  - first:
+      213: -5894401492736746540
+    second: Beyblades_41
+  - first:
+      213: -4243319832235594169
+    second: Beyblades_42
+  - first:
+      213: -652264593435908811
+    second: Beyblades_43
+  - first:
+      213: 8906634168028215080
+    second: Beyblades_44
+  - first:
+      213: -6549268118959168719
+    second: Beyblades_45
+  - first:
+      213: -1991352532496780367
+    second: Beyblades_46
+  - first:
+      213: -1721884483544865799
+    second: Beyblades_47
+  - first:
+      213: 2868535012429091346
+    second: Beyblades_48
+  - first:
+      213: -384247468988740716
+    second: Beyblades_49
+  - first:
+      213: 1760238586645066538
+    second: Beyblades_50
+  - first:
+      213: -4104285045868863029
+    second: Beyblades_51
+  - first:
+      213: 3336143205730383872
+    second: Beyblades_52
+  - first:
+      213: -4267771134096165929
+    second: Beyblades_53
+  - first:
+      213: 7864722338151982535
+    second: Beyblades_54
+  - first:
+      213: 3164608023481208708
+    second: Beyblades_55
+  - first:
+      213: -1247986409006660040
+    second: Beyblades_56
+  - first:
+      213: -193046111760833597
+    second: Beyblades_57
+  - first:
+      213: -4299133507202490987
+    second: Beyblades_58
+  - first:
+      213: -2187260520630583051
+    second: Beyblades_59
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beyblades_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 350
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0190977accf845950800000000000000
+      internalID: 6436927876565109008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 356
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47002ccaf7ebf4240800000000000000
+      internalID: 4778247185231904884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 352
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b93df93fb461cc0800000000000000
+      internalID: -3740718930754036979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 352
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4b071c93e5a1460800000000000000
+      internalID: 7213181355338806452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_4
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 351
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ee12c65b9a0a510800000000000000
+      internalID: 1558432067738529346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_5
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 356
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161214979afced450800000000000000
+      internalID: 6115553670806446433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 356
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f5a116ac4974060800000000000000
+      internalID: 6937677347920961289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_7
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 351
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e97ddcc507dc82f0800000000000000
+      internalID: -969163399879624222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 350
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a9a87d493b9040800000000000000
+      internalID: 4655377644717188789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_9
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 353
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b66f4392bd9fce0800000000000000
+      internalID: -1370823641528898719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 285
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90704f04824a09650800000000000000
+      internalID: 6237665976703518473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_11
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 281
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182fb1efe705d8990800000000000000
+      internalID: -7382155707831029119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 283
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56065fa94c952ba10800000000000000
+      internalID: 1923698691788857445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 283
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8f0cfc5cf44a3d0800000000000000
+      internalID: -3196342124513527561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 281
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96df2cc27cf42cb0800000000000000
+      internalID: -4889505725435357541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_15
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 283
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e14aa35b4e0bb160800000000000000
+      internalID: 7042238159012905442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 283
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbd9617ddb18ff10800000000000000
+      internalID: 2303621847304494038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_17
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 284
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c91f4d50fa68f3b0800000000000000
+      internalID: -5478511366106048055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_18
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 281
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213676c9a09e09600800000000000000
+      internalID: 473134192656868114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_19
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 287
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c003bd65ce8a2400800000000000000
+      internalID: 300209303773708485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9b1d040a8de10f0800000000000000
+      internalID: -1144239072511673913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_21
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b5c9724010c6e90800000000000000
+      internalID: -7031243800876131468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 214
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a03e4749320270b0800000000000000
+      internalID: -5732516930656522077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_23
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 212
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60add6f67e9efdc0800000000000000
+      internalID: -3603268418064768915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_24
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 215
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6683ca0762228b1c0800000000000000
+      internalID: -4487799480180262810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_25
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701f5ee8a21183de0800000000000000
+      internalID: -1353312813541101305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_26
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 213
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7d910c150b25840800000000000000
+      internalID: 5211421583982843820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_27
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6334f29f4280271e0800000000000000
+      internalID: -2201688312938282186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_28
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 215
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57efc50abd5b55560800000000000000
+      internalID: 7301942325744041589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_29
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 213
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a42533ba597eca0800000000000000
+      internalID: -5987652617032807784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 151
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d485037947b6310800000000000000
+      internalID: 1399340301928648090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_31
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 144
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b0b6fb891e2d770800000000000000
+      internalID: 8634211481785404289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_32
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 143
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5205bf6bfb45ce30800000000000000
+      internalID: 4523104944046539354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_33
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 146
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142c035015b5238d0800000000000000
+      internalID: -2868129609144024511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_34
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 143
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64b913833a9e6490800000000000000
+      internalID: -7751088362624535441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_35
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 145
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61474a99f4263ae60800000000000000
+      internalID: 7972323859395539990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_36
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 143
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a667f6383664e8550800000000000000
+      internalID: 6164942333137614442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_37
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 143
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e7a0caa5695e140800000000000000
+      internalID: 4748366698309647944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_38
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 146
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77a0fc7e05f1bfc0800000000000000
+      internalID: -3480731594406189187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_39
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 143
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b4e19c093401ef0800000000000000
+      internalID: -139537299319928010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 75
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2a6c4edb73027f0800000000000000
+      internalID: -639449858360040787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_41
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 75
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbd4ed7211e23ea0800000000000000
+      internalID: -5894401492736746540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_42
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 74
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e2a3b3813bc15c0800000000000000
+      internalID: -4243319832235594169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_43
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 75
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53520b0eec0b2f6f0800000000000000
+      internalID: -652264593435908811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_44
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 75
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827bda12698ba9b70800000000000000
+      internalID: 8906634168028215080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_45
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 77
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133e5a668535c15a0800000000000000
+      internalID: -6549268118959168719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_46
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 79
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b374fd1c6b4d54e0800000000000000
+      internalID: -1991352532496780367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_47
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 74
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f32d066f23aa18e0800000000000000
+      internalID: -1721884483544865799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_48
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 74
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2125b9945651fc720800000000000000
+      internalID: 2868535012429091346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_49
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 75
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b451976f0eaaaf0800000000000000
+      internalID: -384247468988740716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 12
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a233aec1baf9d6810800000000000000
+      internalID: 1760238586645066538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_51
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 5
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1e9080f76aa07c0800000000000000
+      internalID: -4104285045868863029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_52
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0087469e19c5c4e20800000000000000
+      internalID: 3336143205730383872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_53
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d33881e3c4d5c4c0800000000000000
+      internalID: -4267771134096165929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_54
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5e0a62c4b152d60800000000000000
+      internalID: 7864722338151982535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_55
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 5
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fc2f40b32faeb20800000000000000
+      internalID: 3164608023481208708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_56
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 5
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83684ae19f24eaee0800000000000000
+      internalID: -1247986409006660040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_57
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 8
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3a93b8599225df0800000000000000
+      internalID: -193046111760833597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_58
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d573d5ad86654c0800000000000000
+      internalID: -4299133507202490987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyblades_59
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f00494252a45a1e0800000000000000
+      internalID: -2187260520630583051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beyblades_27: -2201688312938282186
+      Beyblades_17: -5478511366106048055
+      Beyblades_31: 8634211481785404289
+      Beyblades_2: -3740718930754036979
+      Beyblades_50: 1760238586645066538
+      Beyblades_49: -384247468988740716
+      Beyblades_32: 4523104944046539354
+      Beyblades_59: -2187260520630583051
+      Beyblades_8: 4655377644717188789
+      Beyblades_9: -1370823641528898719
+      Beyblades_20: -1144239072511673913
+      Beyblades_44: 8906634168028215080
+      Beyblades_7: -969163399879624222
+      Beyblades_11: -7382155707831029119
+      Beyblades_34: -7751088362624535441
+      Beyblades_58: -4299133507202490987
+      Beyblades_19: 300209303773708485
+      Beyblades_22: -5732516930656522077
+      Beyblades_14: -4889505725435357541
+      Beyblades_18: 473134192656868114
+      Beyblades_54: 7864722338151982535
+      Beyblades_24: -4487799480180262810
+      Beyblades_30: 1399340301928648090
+      Beyblades_12: 1923698691788857445
+      Beyblades_29: -5987652617032807784
+      Beyblades_45: -6549268118959168719
+      Beyblades_40: -639449858360040787
+      Beyblades_16: 2303621847304494038
+      Beyblades_42: -4243319832235594169
+      Beyblades_52: 3336143205730383872
+      Beyblades_55: 3164608023481208708
+      Beyblades_4: 1558432067738529346
+      Beyblades_35: 7972323859395539990
+      Beyblades_46: -1991352532496780367
+      Beyblades_5: 6115553670806446433
+      Beyblades_48: 2868535012429091346
+      Beyblades_23: -3603268418064768915
+      Beyblades_33: -2868129609144024511
+      Beyblades_38: -3480731594406189187
+      Beyblades_15: 7042238159012905442
+      Beyblades_36: 6164942333137614442
+      Beyblades_13: -3196342124513527561
+      Beyblades_41: -5894401492736746540
+      Beyblades_39: -139537299319928010
+      Beyblades_47: -1721884483544865799
+      Beyblades_6: 6937677347920961289
+      Beyblades_57: -193046111760833597
+      Beyblades_28: 7301942325744041589
+      Beyblades_3: 7213181355338806452
+      Beyblades_10: 6237665976703518473
+      Beyblades_1: 4778247185231904884
+      Beyblades_56: -1247986409006660040
+      Beyblades_53: -4267771134096165929
+      Beyblades_25: -1353312813541101305
+      Beyblades_43: -652264593435908811
+      Beyblades_37: 4748366698309647944
+      Beyblades_21: -7031243800876131468
+      Beyblades_26: 5211421583982843820
+      Beyblades_0: 6436927876565109008
+      Beyblades_51: -4104285045868863029
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
