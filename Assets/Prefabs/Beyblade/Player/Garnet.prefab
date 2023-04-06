@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4819879730129645373}
   - component: {fileID: 4819879730129645369}
   - component: {fileID: 4819879730129645319}
-  - component: {fileID: 4819879730129645367}
   - component: {fileID: -741475895635183292}
   m_Layer: 0
   m_Name: Garnet
@@ -159,7 +158,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   rb: {fileID: 0}
   guarding: 0
-  parrying: 0
+  reflecting: 0
   phantomDashing: 0
   dashing: 0
   overdriving: 0
@@ -173,7 +172,7 @@ MonoBehaviour:
   phantomDashCost: 30
   parryCost: 45
   launchSpeed: 300
-  currentSpeed: 0
+  currentStamina: 0
   lad: 0
   decayRate: 0
   parryTime: 0.2
@@ -183,6 +182,7 @@ MonoBehaviour:
   cWheel: {fileID: 11400000, guid: 060e3a6cb46e7b34da12fc77a0310cfd, type: 2}
   track: {fileID: 11400000, guid: f8a18665adfd7c540a01a26cce862a6b, type: 2}
   driver: {fileID: 11400000, guid: ecaf941f717f6c043bdfdf6d823a7a1f, type: 2}
+  ability: {fileID: 0}
   launched: 0
 --- !u!114 &4819879730129645373
 MonoBehaviour:
@@ -273,53 +273,37 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Dash
       m_Flags: 0
-  guard:
-    m_Name: Guard
+  reflect:
+    m_Name: Reflect
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 0d782f6f-a1b1-4c76-9cfe-c4af47d266a2
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 205ac70e-1008-437c-bc91-19dca93d0bf3
-      m_Path: <Keyboard>/z
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Guard
-      m_Flags: 0
-  parry:
-    m_Name: Parry
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e2e58b33-e215-408a-889f-ca3bf854e0d2
+    m_Id: 0a045018-2be3-4960-b1e1-a0d522b98b45
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: Button With One Modifier
-      m_Id: fef2ed83-d4d7-498a-9497-4a32eaaccabf
+      m_Id: 11d0673d-0878-472a-b834-6dad2201d472
       m_Path: ButtonWithOneModifier
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Parry
+      m_Action: Reflect
       m_Flags: 4
     - m_Name: modifier
-      m_Id: 078af6ab-a2e3-495c-bac2-3de839d9e11f
+      m_Id: 57401d57-7eaa-4d9d-b3da-00050fd53001
       m_Path: <Keyboard>/z
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Parry
+      m_Action: Reflect
       m_Flags: 8
     - m_Name: button
-      m_Id: dc28d3a9-1517-4f1c-8207-6a71deefb5ad
+      m_Id: 30a08d8f-a886-4261-a7b6-999feb6e8e74
       m_Path: <Keyboard>/x
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Parry
+      m_Action: Reflect
       m_Flags: 8
   phantomDash:
     m_Name: Phantom Dash
@@ -337,22 +321,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Phantom Dash
       m_Flags: 0
-  overdrive:
-    m_Name: Overdrive
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0760dbce-5122-444c-9fbb-3ebbdc9e88c5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 796ec0a1-e4eb-4282-83ba-8b88ca91c926
-      m_Path: <Keyboard>/v
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Overdrive
-      m_Flags: 0
+  dashDelay: 0.05
 --- !u!114 &4819879730129645319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,25 +335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliding: 0
---- !u!95 &4819879730129645367
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4819879730129645360}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3aabf3eef79752c4fac56ca132e48f3f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!96 &-741475895635183292
 TrailRenderer:
   serializedVersion: 2

@@ -17,7 +17,7 @@ public class Beyblade : MonoBehaviour
     [HideInInspector] public Animator anim;
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public bool guarding = false;
-    [HideInInspector] public bool parrying = false;
+    [HideInInspector] public bool reflecting = false;
     [HideInInspector] public bool phantomDashing = false;
     [HideInInspector] public bool dashing = false;
     [HideInInspector] public bool overdriving = false;

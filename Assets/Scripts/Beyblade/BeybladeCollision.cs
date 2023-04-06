@@ -26,7 +26,6 @@ public class BeybladeCollision : MonoBehaviour
             return;
         }
     }
-
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.GetComponent<Beyblade>() == null) return;
@@ -55,15 +54,16 @@ public class BeybladeCollision : MonoBehaviour
             // stop sound effect
         }
 
-        Knockback(-dir, opponent);
+        //Knockback(-dir, opponent);
+        NewKnockback(-dir, opponent.GetComponent<BeybladeCollision>());
     }
-
     private void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.GetComponent<Beyblade>() == null) return;
         Invoke("NotColliding", 0.01f);
     }
 
+    /*
     private void Knockback(Vector3 direction, Beyblade opponent)
     {
         // SPARK EFFECT
@@ -147,8 +147,6 @@ public class BeybladeCollision : MonoBehaviour
             UIEvents.current.Combo((int)damage);
         }
 
-        // DESTABLIZATION CHECK
-
         // APPLY KNOCKBACK
         if(!opponent.parrying && beyblade.storedDamage == Vector2.zero){
             beyblade.rb.AddForce(knockback, ForceMode2D.Impulse);
@@ -161,8 +159,68 @@ public class BeybladeCollision : MonoBehaviour
         if (beyblade.currentMeter >= beyblade.maxMeter) return;
         beyblade.currentMeter += (int)(damage * 0.35f);
     }
+    */
 
+    private void NewKnockback(Vector3 direction, BeybladeCollision opponent)
+    {
+        ResetBonuses();
+        ChanceBonuses();
 
+        // Spark Effects
+        GameObject spark = Instantiate(beyblade.sparkEffect, new Vector2(0, 0), Quaternion.identity);
+        spark.transform.position = beyblade.transform.position;
+        if (criticalHit)
+        {
+            var particleSystem = spark.GetComponent<ParticleSystem>();
+            particleSystem.Stop();
+            var color = particleSystem.colorOverLifetime;
+            color.enabled = true;
+            Gradient grad = new Gradient();
+            grad.SetKeys(new GradientColorKey[] { new GradientColorKey(Color.blue, 0.0f), new GradientColorKey(Color.white, 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(1.0f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) });
+            color.color = grad;
+            particleSystem.Play();
+        }
+
+        // Sound Effects
+        if (!criticalHit) GameEvents.current.Hit();
+
+        // Knockback Calculation
+        // You deal no knockback while Phantom Dashing
+        // If you are hit while Phantom Dashing you take full knockback.
+
+        Vector3 knockback;
+        if(opponent.criticalHit)
+        {
+            StartCoroutine(HitStop());
+            knockback = direction * 40f;
+        }
+        else if(criticalDefend)
+        {
+            StartCoroutine(HitStop());
+            knockback = direction * 10f;
+        }
+        else if (opponent.GetComponent<Beyblade>().phantomDashing)
+        {
+            knockback = direction * 0.0f;
+        }
+        else
+        {
+            knockback = direction * 20f;
+        }
+
+        //knockback = direction * 0;
+        beyblade.rb.AddForce(knockback, ForceMode2D.Impulse);
+
+        if (beyblade.currentMeter >= beyblade.maxMeter) return;
+        beyblade.currentMeter += (int)(10);
+    }
+
+    private IEnumerator HitStop()
+    {
+        Time.timeScale = 0.0f;
+        yield return new WaitForSecondsRealtime(0.1f);
+        Time.timeScale = 1.0f;
+    }
     private void ChanceBonuses()
     {
         if (beyblade.mWheel.bonusAttack != 0)
@@ -213,10 +271,20 @@ public class BeybladeCollision : MonoBehaviour
         print("Start Danger Time");
         dangerTime = true;
         UIEvents.current.DangerTime();
-        // display banner UI to indicate Danger Time
-        // dim the area around the arena and add speed lines and a red glow from the sides of the screen
-        // both super meters are filled. Beyblade have access to their super attacks.
-        // chance bonuses are doubled and all knockback is halved for the next 5 seconds.
+
+        // Disable both beyblade movement and hitbox
+        // Dim the screen
+        // Red glow appears from top and bottom of screen
+        // Warning flashes onto screen
+        // Countdown from 3 starts before 
+        // Enable both beyblade movement and hitbox
+
+        // Meter is infinite 
+        // Beyblades slowly increase in stamina instead of decay
+        // Attacks deal double damage and reduced knockback
+        // Beyblades have access to their super moves
+
+        // After 5 Seconds Danger Time ends and cannot be activated again until the next round
     }
 
     private void EndDangerTime()

@@ -14,7 +14,6 @@ public class UIEvents : MonoBehaviour
 
     public event Action<Beyblade> onHit;
     public event Action<int> onCombo;
-    public event Action<float> onOverdrive;
     public event Action onDC;
     public event Action<Beyblade> onCriticalHit;
     public event Action<Beyblade> onCriticalDefend;
@@ -52,11 +51,6 @@ public class UIEvents : MonoBehaviour
     {
         if (onParry == null) return;
         onParry(beyblade);
-    }
-    public void Overdrive(float time)
-    {
-        if (onOverdrive == null) return;
-        onOverdrive(time);
     }
 
     public void SelectBeyblade(Beyblade beyblade)

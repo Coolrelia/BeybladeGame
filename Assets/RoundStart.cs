@@ -72,10 +72,10 @@ public class RoundStart : MonoBehaviour
 
         player.dashing = false;
         player.phantomDashing = false;
-        player.parrying = false;
+        player.reflecting = false;
         enemy.dashing = false;
         enemy.phantomDashing = false;
-        enemy.parrying = false;
+        enemy.reflecting = false;
 
 
         player.launched = false;

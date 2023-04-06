@@ -27,7 +27,7 @@ public class PhantomTimer : MonoBehaviour
     {
         GameEvents.current.onPhantomTimer += Timer;
         GameEvents.current.onPhantomCancel += StopTimer;
-        UIEvents.current.onOverdrive += ScreenDim;
+        UIEvents.current.onDC += DangerTime;
     }
 
     private void Update()
@@ -39,9 +39,14 @@ public class PhantomTimer : MonoBehaviour
         if(dashObject != null && beyblade.phantomDashing){
             dashObject.transform.position = beyblade.transform.position;
         }
-        else if (parryObject != null && beyblade.parrying){
+        else if (parryObject != null && beyblade.reflecting){
             parryObject.transform.position = beyblade.transform.position;
         }
+    }
+
+    private void DangerTime()
+    {
+
     }
 
     private void ScreenDim(float time)

@@ -26,9 +26,9 @@ public class EnemyAI : MonoBehaviour
         if (beyblade.opponent == null) return;
 
         ParryCheck();
-        if (beyblade.parrying) return;
+        if (beyblade.reflecting) return;
 
-        if (collision.colliding && !beyblade.parrying){
+        if (collision.colliding && !beyblade.reflecting){
             StartCoroutine(KnockbackWait());
         }
         if (knockedBack) return;
@@ -59,10 +59,10 @@ public class EnemyAI : MonoBehaviour
     {
         if (beyblade.currentStamina <= 0) return;
         if (beyblade.phantomDashing) return;
-        if (beyblade.parrying) return;
+        if (beyblade.reflecting) return;
         if (beyblade.dashing) return;
         if (beyblade.opponent.GetComponent<Beyblade>().phantomDashing) return;
-        if (beyblade.opponent.GetComponent<Beyblade>().parrying) return;
+        if (beyblade.opponent.GetComponent<Beyblade>().reflecting) return;
 
         if(Vector2.Distance(beyblade.transform.position, beyblade.opponent.transform.position) <= 2.5)
         {
@@ -82,11 +82,11 @@ public class EnemyAI : MonoBehaviour
         int parryChance = Random.Range(0, 120);
         if (parryChance > 1) return;
 
-        if (beyblade.parrying) return;
+        if (beyblade.reflecting) return;
         if (beyblade.phantomDashing) return;
         if (!beyblade.collision.colliding) return;
         if (beyblade.currentMeter < beyblade.parryCost) return;
-        if (beyblade.opponent.GetComponent<Beyblade>().parrying) return;
+        if (beyblade.opponent.GetComponent<Beyblade>().reflecting) return;
 
         Vector3 dir = (transform.position - beyblade.opponent.transform.position).normalized;
         StartCoroutine(ParryAction(dir));
@@ -94,14 +94,14 @@ public class EnemyAI : MonoBehaviour
     private void DashCheck()
     {
         if (beyblade.currentStamina <= 0) return;
-        if (beyblade.opponent.GetComponent<Beyblade>().parrying) return;
+        if (beyblade.opponent.GetComponent<Beyblade>().reflecting) return;
 
         if (Vector2.Distance(transform.position, beyblade.opponent.transform.position) <= 4f)
         {
             int dashChance = Random.Range(0, 25);
             if (dashChance > 1) return;
 
-            if (beyblade.parrying) return;
+            if (beyblade.reflecting) return;
             if (beyblade.phantomDashing) return;
             if (beyblade.collision.colliding) return;
             Vector3 dir = (transform.position - beyblade.opponent.transform.position).normalized;
@@ -140,7 +140,7 @@ public class EnemyAI : MonoBehaviour
         GameEvents.current.PhantomTimer(beyblade.opponent);
         UIEvents.current.Parry(beyblade);
 
-        beyblade.parrying = true;
+        beyblade.reflecting = true;
 
         Time.timeScale = 0.3f;
         Time.fixedDeltaTime = Time.fixedDeltaTime * Time.timeScale;
@@ -158,7 +158,7 @@ public class EnemyAI : MonoBehaviour
 
         beyblade.rb.velocity = beyblade.rb.velocity / 2;
         beyblade.rb.angularVelocity = beyblade.rb.angularVelocity / 2;
-        beyblade.parrying = false;
+        beyblade.reflecting = false;
 
         opponent.rb.constraints = RigidbodyConstraints2D.None;
         opponent.rb.AddForce(opponent.storedDamage * 0.17f, ForceMode2D.Impulse);

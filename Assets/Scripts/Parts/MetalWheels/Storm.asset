@@ -19,5 +19,5 @@ MonoBehaviour:
   id: 1
   bonusAttack: 10
   bonusDefense: 0
-  bonusAttackChance: 15
+  bonusAttackChance: 10
   bonusDefenseChance: 0
