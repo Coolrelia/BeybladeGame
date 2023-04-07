@@ -34,12 +34,27 @@ public class BeybladeMovement : MonoBehaviour
     {
         if (beyblade.currentStamina <= 0) return;
         if (beyblade.phantomDashing) return;
+        if (beyblade.frozen) return;
 
-        if (beyblade.guarding){
-            beyblade.rb.AddForce(moveInput * (beyblade.currentStamina / 4), ForceMode2D.Force);
+        float moveSpeed = 0;
+        float beybladeStamina = beyblade.currentStamina / 2;        
+        if(beybladeStamina > 200)
+        {
+            moveSpeed = 170;
         }
-        else{
-            beyblade.rb.AddForce(moveInput * (beyblade.currentStamina / 2), ForceMode2D.Force);
+        else if(beybladeStamina > 150)
+        {
+            moveSpeed = 140;
         }
+        else if(beybladeStamina > 100)
+        {
+            moveSpeed = 100;
+        }
+        else if(beybladeStamina <= 80)
+        {
+            moveSpeed = 75;
+        }
+
+        beyblade.rb.AddForce(moveInput * moveSpeed, ForceMode2D.Force);
     }
 }

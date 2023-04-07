@@ -25,7 +25,6 @@ public class UIManager : MonoBehaviour
         UIEvents.current.onCriticalDefend += CriticalDefendBanner;
         UIEvents.current.onParry += ParryBanner;
         UIEvents.current.onHit += IncreaseComboMeter;
-        UIEvents.current.onDC += DangerTimeBanner;
 
         criticalHitBanner = transform.GetChild(0).gameObject;
         criticalDefendBanner = transform.GetChild(1).gameObject;

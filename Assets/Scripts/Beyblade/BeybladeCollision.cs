@@ -185,19 +185,16 @@ public class BeybladeCollision : MonoBehaviour
         if (!criticalHit) GameEvents.current.Hit();
 
         // Knockback Calculation
-        // You deal no knockback while Phantom Dashing
-        // If you are hit while Phantom Dashing you take full knockback.
-
         Vector3 knockback;
         if(opponent.criticalHit)
         {
             StartCoroutine(HitStop());
-            knockback = direction * 40f;
+            knockback = (direction * 40f) * DangerKnockbackMod();
         }
         else if(criticalDefend)
         {
             StartCoroutine(HitStop());
-            knockback = direction * 10f;
+            knockback = (direction * 10f) * DangerKnockbackMod();
         }
         else if (opponent.GetComponent<Beyblade>().phantomDashing)
         {
@@ -205,14 +202,25 @@ public class BeybladeCollision : MonoBehaviour
         }
         else
         {
-            knockback = direction * 20f;
+            knockback = (direction * 20f) * DangerKnockbackMod();
         }
 
         //knockback = direction * 0;
         beyblade.rb.AddForce(knockback, ForceMode2D.Impulse);
 
+        // Damage Calculation
+        float damage = (opponent.GetComponent<Beyblade>().attack + (opponent.GetComponent<Beyblade>().currentStamina / 4) - (beyblade.stamina));
+        damage = damage * DangerDamageMod();
+        beyblade.currentStamina -= damage;
+
         if (beyblade.currentMeter >= beyblade.maxMeter) return;
-        beyblade.currentMeter += (int)(10);
+
+        if (beyblade.dangerMode){
+            beyblade.currentMeter += (int)(30);
+        }
+        else{
+            beyblade.currentMeter += (int)(10);
+        }
     }
 
     private IEnumerator HitStop()
@@ -266,25 +274,23 @@ public class BeybladeCollision : MonoBehaviour
         beyblade.rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
+
+    private float DangerKnockbackMod()
+    {
+        if (dangerTime) return 0.7f;
+        else return 1f;
+    }
+    private float DangerDamageMod()
+    {
+        if (beyblade.dangerMode) return 1.2f;
+        else return 1f;
+    }
+
     private void StartDangerTime()
     {
         print("Start Danger Time");
         dangerTime = true;
-        UIEvents.current.DangerTime();
-
-        // Disable both beyblade movement and hitbox
-        // Dim the screen
-        // Red glow appears from top and bottom of screen
-        // Warning flashes onto screen
-        // Countdown from 3 starts before 
-        // Enable both beyblade movement and hitbox
-
-        // Meter is infinite 
-        // Beyblades slowly increase in stamina instead of decay
-        // Attacks deal double damage and reduced knockback
-        // Beyblades have access to their super moves
-
-        // After 5 Seconds Danger Time ends and cannot be activated again until the next round
+        UIEvents.current.DangerTime(beyblade);
     }
 
     private void EndDangerTime()

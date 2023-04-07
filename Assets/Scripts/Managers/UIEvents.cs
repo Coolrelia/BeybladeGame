@@ -14,17 +14,17 @@ public class UIEvents : MonoBehaviour
 
     public event Action<Beyblade> onHit;
     public event Action<int> onCombo;
-    public event Action onDC;
+    public event Action<Beyblade> onDC;
     public event Action<Beyblade> onCriticalHit;
     public event Action<Beyblade> onCriticalDefend;
     public event Action<Beyblade> onParry;
     public event Action<Beyblade> onSelect;
     public event Action<Beyblade> onReady;
 
-    public void DangerTime()
+    public void DangerTime(Beyblade beyblade)
     {
         if (onDC == null) return;
-        onDC();
+        onDC(beyblade);
     }
 
     public void Hit(Beyblade beyblade)

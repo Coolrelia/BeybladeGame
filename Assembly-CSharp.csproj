@@ -59,6 +59,7 @@
     <Compile Include="Assets\BeybladeDirection.cs" />
     <Compile Include="Assets\BeybladeSelect.cs" />
     <Compile Include="Assets\ComboSlider.cs" />
+    <Compile Include="Assets\DangerTime.cs" />
     <Compile Include="Assets\RoundStart.cs" />
     <Compile Include="Assets\Scripts\Abilities\Ability.cs" />
     <Compile Include="Assets\Scripts\Abilities\Teleport.cs" />

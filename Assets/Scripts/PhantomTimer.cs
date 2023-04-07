@@ -26,8 +26,7 @@ public class PhantomTimer : MonoBehaviour
     private void Start()
     {
         GameEvents.current.onPhantomTimer += Timer;
-        GameEvents.current.onPhantomCancel += StopTimer;
-        UIEvents.current.onDC += DangerTime;
+        GameEvents.current.onPhantomCancel += StopTimer;        
     }
 
     private void Update()
@@ -44,11 +43,6 @@ public class PhantomTimer : MonoBehaviour
         }
     }
 
-    private void DangerTime()
-    {
-
-    }
-
     private void ScreenDim(float time)
     {
         StartCoroutine(ScreenDimming(time));
@@ -58,6 +52,7 @@ public class PhantomTimer : MonoBehaviour
     {
         screenDim.SetActive(true);
         yield return new WaitForSeconds(time);
+        if (beyblade.dangerMode) yield break;
         screenDim.SetActive(false);
     }
 
@@ -92,8 +87,8 @@ public class PhantomTimer : MonoBehaviour
 
     private void Reset(Vector2 originalPos)
     {
-        screenDim.SetActive(false);
         opponent = null;
         transform.position = originalPos;
+        screenDim.SetActive(false);
     }
 }

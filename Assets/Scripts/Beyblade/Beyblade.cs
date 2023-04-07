@@ -23,6 +23,8 @@ public class Beyblade : MonoBehaviour
     [HideInInspector] public bool overdriving = false;
     [HideInInspector] public bool overDriven = false;
     [HideInInspector] public Vector2 storedDamage;
+    [HideInInspector] public bool frozen = false;
+    [HideInInspector] public bool dangerMode = false;
 
     [Header("Core Stats")]
     public float attack;
