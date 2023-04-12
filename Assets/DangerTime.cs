@@ -30,6 +30,7 @@ public class DangerTime : MonoBehaviour
     private void StartDangerTime(Beyblade beyblade)
     {
         if (dangerTimeStarted) return;
+        if (beyblade.currentStamina < 100 && beyblade.opponent.GetComponent<Beyblade>().currentStamina < 100) return;
         StartCoroutine(DangerTimeAction(beyblade));
     }
 
@@ -73,8 +74,6 @@ public class DangerTime : MonoBehaviour
         beyblade.opponent.GetComponent<Beyblade>().currentMeter = 0;
 
         beyblade.decayRate = beyblade.driver.decayRate;
-        beyblade.opponent.GetComponent<Beyblade>().decayRate = beyblade.opponent.GetComponent<Beyblade>().driver.decayRate;
-
-        // After 5 Seconds Danger Time ends and cannot be activated again until the next round
+        beyblade.opponent.GetComponent<Beyblade>().decayRate = beyblade.opponent.GetComponent<Beyblade>().driver.decayRate;      
     }
 }

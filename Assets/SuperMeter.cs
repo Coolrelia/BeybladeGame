@@ -43,13 +43,6 @@ public class SuperMeter : MonoBehaviour
         Setup();
         if (!setupDone) return;
 
-        if (!player.overdriving){
-            fill.color = new Color32(145, 253, 32, 255);
-        }
-        else{
-            fill.color = new Color32(32, 253, 241, 255);
-        }
-
         if (!increasing && !decreasing)
         {
             StartCoroutine(IncreaseValue());

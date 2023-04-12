@@ -20,9 +20,6 @@ public class Beyblade : MonoBehaviour
     [HideInInspector] public bool reflecting = false;
     [HideInInspector] public bool phantomDashing = false;
     [HideInInspector] public bool dashing = false;
-    [HideInInspector] public bool overdriving = false;
-    [HideInInspector] public bool overDriven = false;
-    [HideInInspector] public Vector2 storedDamage;
     [HideInInspector] public bool frozen = false;
     [HideInInspector] public bool dangerMode = false;
 
@@ -33,14 +30,13 @@ public class Beyblade : MonoBehaviour
     public int maxMeter;
     public int currentMeter;
     public int phantomDashCost;
-    public int parryCost;
+    public int reflectCost;
 
     [Header("Other Stats")]
     public float launchSpeed;
     public float currentStamina;
     public float lad;
     public float decayRate;
-    public float parryTime;
     
     [Header("Bonus Stats")]
     public float bonusAttack = 0;
@@ -112,7 +108,8 @@ public class Beyblade : MonoBehaviour
     {
         ResetBeyblade();
         launched = true;
-        overDriven = false;
+        dangerMode = false;
+        frozen = false;
         currentStamina = launchSpeed + driver.speed;
         while (currentStamina > 0)
         {

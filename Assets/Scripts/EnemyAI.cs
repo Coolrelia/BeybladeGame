@@ -85,7 +85,7 @@ public class EnemyAI : MonoBehaviour
         if (beyblade.reflecting) return;
         if (beyblade.phantomDashing) return;
         if (!beyblade.collision.colliding) return;
-        if (beyblade.currentMeter < beyblade.parryCost) return;
+        if (beyblade.currentMeter < beyblade.reflectCost) return;
         if (beyblade.opponent.GetComponent<Beyblade>().reflecting) return;
 
         Vector3 dir = (transform.position - beyblade.opponent.transform.position).normalized;
@@ -131,7 +131,7 @@ public class EnemyAI : MonoBehaviour
     }
     private IEnumerator ParryAction(Vector3 direction)
     {
-        beyblade.currentMeter -= beyblade.parryCost;
+        beyblade.currentMeter -= beyblade.reflectCost;
 
         Beyblade opponent = beyblade.opponent.GetComponent<Beyblade>();
 
@@ -161,8 +161,6 @@ public class EnemyAI : MonoBehaviour
         beyblade.reflecting = false;
 
         opponent.rb.constraints = RigidbodyConstraints2D.None;
-        opponent.rb.AddForce(opponent.storedDamage * 0.17f, ForceMode2D.Impulse);
-        opponent.storedDamage = Vector2.zero;
     }
     private IEnumerator DashAction(Vector3 direction)
     {

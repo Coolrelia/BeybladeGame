@@ -9,7 +9,6 @@ public class BeybladeCollision : MonoBehaviour
     private bool criticalDefend = false;
     private bool phantomDashCancelled = false;
     public bool colliding = false;
-    private Vector2 storedDamage;
     private bool dangerTime = false;
 
     private void Awake()
@@ -37,7 +36,7 @@ public class BeybladeCollision : MonoBehaviour
         colliding = true;
 
         // Danger Time Check
-        int dangerChance = 50;
+        int dangerChance = 1;
         int randomNumber = Random.Range(1, 100);
         if(randomNumber <= dangerChance)
         {
@@ -168,18 +167,7 @@ public class BeybladeCollision : MonoBehaviour
 
         // Spark Effects
         GameObject spark = Instantiate(beyblade.sparkEffect, new Vector2(0, 0), Quaternion.identity);
-        spark.transform.position = beyblade.transform.position;
-        if (criticalHit)
-        {
-            var particleSystem = spark.GetComponent<ParticleSystem>();
-            particleSystem.Stop();
-            var color = particleSystem.colorOverLifetime;
-            color.enabled = true;
-            Gradient grad = new Gradient();
-            grad.SetKeys(new GradientColorKey[] { new GradientColorKey(Color.blue, 0.0f), new GradientColorKey(Color.white, 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(1.0f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) });
-            color.color = grad;
-            particleSystem.Play();
-        }
+        spark.transform.position = beyblade.transform.position;     
 
         // Sound Effects
         if (!criticalHit) GameEvents.current.Hit();
@@ -211,7 +199,7 @@ public class BeybladeCollision : MonoBehaviour
         // Damage Calculation
         float damage = (opponent.GetComponent<Beyblade>().attack + (opponent.GetComponent<Beyblade>().currentStamina / 4) - (beyblade.stamina));
         damage = damage * DangerDamageMod();
-        beyblade.currentStamina -= damage;
+        beyblade.currentStamina -= damage/4;
 
         if (beyblade.currentMeter >= beyblade.maxMeter) return;
 
@@ -292,7 +280,6 @@ public class BeybladeCollision : MonoBehaviour
         dangerTime = true;
         UIEvents.current.DangerTime(beyblade);
     }
-
     private void EndDangerTime()
     {
         dangerTime = false;

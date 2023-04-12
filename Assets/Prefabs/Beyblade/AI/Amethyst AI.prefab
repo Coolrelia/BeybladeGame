@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb99a12a7cd30564b8f2db7b567877d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sparkEffect: {fileID: 5760281755233615679, guid: 71f3f09c12a803f4bb4a0cbec52e27d0,
+  sparkEffect: {fileID: 5760281755233615679, guid: 02b075b46862e4448bfdd983b21f89ab,
     type: 3}
   overdriveEffect: {fileID: 3061510376620673549, guid: 4ad2be49867a5f54ebfa9e938e2ab374,
     type: 3}
@@ -158,12 +158,12 @@ MonoBehaviour:
   anim: {fileID: 0}
   rb: {fileID: 0}
   guarding: 0
-  parrying: 0
+  reflecting: 0
   phantomDashing: 0
   dashing: 0
-  overdriving: 0
-  overDriven: 0
   storedDamage: {x: 0, y: 0}
+  frozen: 0
+  dangerMode: 0
   attack: 0
   defense: 0
   stamina: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   phantomDashCost: 30
   parryCost: 45
   launchSpeed: 300
-  currentSpeed: 0
+  currentStamina: 0
   lad: 0
   decayRate: 0
   parryTime: 0
@@ -182,6 +182,7 @@ MonoBehaviour:
   cWheel: {fileID: 11400000, guid: fb0e9217f5b929248ae411cef3fcef45, type: 2}
   track: {fileID: 11400000, guid: 1067b987818c7b640a5b289857bcd876, type: 2}
   driver: {fileID: 11400000, guid: e63aa0059bf32f441b0b2dbce5de952d, type: 2}
+  ability: {fileID: 0}
   launched: 0
 --- !u!114 &8137557525932752446
 MonoBehaviour:

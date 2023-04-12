@@ -27,7 +27,7 @@ public class BeybladeAbilities : MonoBehaviour
     private void Reflect(InputAction.CallbackContext ctx)
     {
         if (!beyblade.launched) return;
-        if (beyblade.currentMeter < beyblade.parryCost) return;
+        if (beyblade.currentMeter < beyblade.reflectCost) return;
         if (beyblade.reflecting) return;
         if (beyblade.phantomDashing) return;
         if (!beyblade.collision.colliding) return;
@@ -42,7 +42,6 @@ public class BeybladeAbilities : MonoBehaviour
         if (beyblade.opponent.GetComponent<Beyblade>().phantomDashing) return;
         StartCoroutine(PhantomDashAction());
     }
-
 
     public void CancelPhantomDash()
     {

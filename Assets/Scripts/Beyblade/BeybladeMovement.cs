@@ -12,7 +12,6 @@ public class BeybladeMovement : MonoBehaviour
     {
         playerMovement.Enable();
     }
-
     private void OnDisable()
     {
         playerMovement.Disable();
@@ -37,7 +36,7 @@ public class BeybladeMovement : MonoBehaviour
         if (beyblade.frozen) return;
 
         float moveSpeed = 0;
-        float beybladeStamina = beyblade.currentStamina / 2;        
+        float beybladeStamina = beyblade.currentStamina / 2;
         if(beybladeStamina > 200)
         {
             moveSpeed = 170;
@@ -55,6 +54,9 @@ public class BeybladeMovement : MonoBehaviour
             moveSpeed = 75;
         }
 
+        if (moveSpeed == 0) moveSpeed = 100;
+
         beyblade.rb.AddForce(moveInput * moveSpeed, ForceMode2D.Force);
+        print(moveSpeed);
     }
 }

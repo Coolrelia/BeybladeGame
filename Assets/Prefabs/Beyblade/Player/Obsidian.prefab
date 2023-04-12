@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb99a12a7cd30564b8f2db7b567877d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sparkEffect: {fileID: 5760281755233615679, guid: 71f3f09c12a803f4bb4a0cbec52e27d0,
+  sparkEffect: {fileID: 5760281755233615679, guid: 02b075b46862e4448bfdd983b21f89ab,
     type: 3}
   overdriveEffect: {fileID: 3061510376620673549, guid: 4ad2be49867a5f54ebfa9e938e2ab374,
     type: 3}
@@ -161,9 +161,9 @@ MonoBehaviour:
   reflecting: 0
   phantomDashing: 0
   dashing: 0
-  overdriving: 0
-  overDriven: 0
   storedDamage: {x: 0, y: 0}
+  frozen: 0
+  dangerMode: 0
   attack: 0
   defense: 0
   stamina: 0
