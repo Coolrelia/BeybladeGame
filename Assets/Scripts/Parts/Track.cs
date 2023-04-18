@@ -7,11 +7,12 @@ public class Track : ScriptableObject
     public string trackName;
     public float attack;
     public float defense;
+    public float stamina;
     public int height;
 
     [Header("Chance Bonuses")]
     public float bonusAttack;
     public float bonusDefense;
-    public float bonusAttackChance;
-    public float bonusDefenseChance;
+    public float critHitChance;
+    public float critDefChance;
 }

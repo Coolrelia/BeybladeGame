@@ -8,8 +8,11 @@ public class BeybladeCollision : MonoBehaviour
     private bool criticalHit = false;
     private bool criticalDefend = false;
     private bool phantomDashCancelled = false;
-    public bool colliding = false;
     private bool dangerTime = false;
+
+    public bool colliding = false;
+    public float hitStopTime = 0.05f;
+    public float critHitStopTime = 1f;
 
     private void Awake()
     {
@@ -162,8 +165,7 @@ public class BeybladeCollision : MonoBehaviour
 
     private void NewKnockback(Vector3 direction, BeybladeCollision opponent)
     {
-        ResetBonuses();
-        ChanceBonuses();
+        CritChance();
 
         // Spark Effects
         GameObject spark = Instantiate(beyblade.sparkEffect, new Vector2(0, 0), Quaternion.identity);
@@ -176,12 +178,12 @@ public class BeybladeCollision : MonoBehaviour
         Vector3 knockback;
         if(opponent.criticalHit)
         {
-            StartCoroutine(HitStop());
+            StartCoroutine(HitStop(critHitStopTime));
             knockback = (direction * 40f) * DangerKnockbackMod();
         }
         else if(criticalDefend)
         {
-            StartCoroutine(HitStop());
+            StartCoroutine(HitStop(hitStopTime));
             knockback = (direction * 10f) * DangerKnockbackMod();
         }
         else if (opponent.GetComponent<Beyblade>().phantomDashing)
@@ -190,6 +192,7 @@ public class BeybladeCollision : MonoBehaviour
         }
         else
         {
+            StartCoroutine(HitStop(hitStopTime));
             knockback = (direction * 20f) * DangerKnockbackMod();
         }
 
@@ -200,6 +203,7 @@ public class BeybladeCollision : MonoBehaviour
         float damage = (opponent.GetComponent<Beyblade>().attack + (opponent.GetComponent<Beyblade>().currentStamina / 4) - (beyblade.stamina));
         damage = damage * DangerDamageMod();
         beyblade.currentStamina -= damage/4;
+        ResetBonuses();
 
         if (beyblade.currentMeter >= beyblade.maxMeter) return;
 
@@ -211,19 +215,18 @@ public class BeybladeCollision : MonoBehaviour
         }
     }
 
-    private IEnumerator HitStop()
+    private IEnumerator HitStop(float hitstop)
     {
         Time.timeScale = 0.0f;
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSecondsRealtime(hitstop);
         Time.timeScale = 1.0f;
     }
-    private void ChanceBonuses()
+    private void CritChance()
     {
         if (beyblade.mWheel.bonusAttack != 0)
         {
-            int roll = Random.Range(0, 100);
-            if (roll >= beyblade.mWheel.bonusAttackChance) return;
-            beyblade.bonusAttack = beyblade.mWheel.bonusAttack;
+            int roll = Random.Range(1, 101);
+            if (roll > beyblade.mWheel.critHitChance) return;
             beyblade.attack += beyblade.bonusAttack;
             GameEvents.current.CriticalHit();
             UIEvents.current.CriticalHit(beyblade);
@@ -232,9 +235,8 @@ public class BeybladeCollision : MonoBehaviour
         }
         if (beyblade.mWheel.bonusDefense != 0)
         {
-            int roll = Random.Range(0, 100);
-            if (roll >= beyblade.mWheel.bonusDefenseChance) return;
-            beyblade.bonusDefense = beyblade.mWheel.bonusDefense;
+            int roll = Random.Range(1, 101);
+            if (roll > beyblade.mWheel.critDefChance) return;
             beyblade.defense += beyblade.bonusDefense;
             print(gameObject.name + " Critical Defend!");
             GameEvents.current.CriticalGuard();
@@ -245,10 +247,7 @@ public class BeybladeCollision : MonoBehaviour
     private void ResetBonuses()
     {
         beyblade.attack -= beyblade.bonusAttack;
-        beyblade.bonusAttack = 0;
-
         beyblade.defense -= beyblade.bonusDefense;
-        beyblade.bonusDefense = 0;
 
         criticalHit = false;
         criticalDefend = false;

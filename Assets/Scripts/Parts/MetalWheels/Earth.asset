@@ -17,7 +17,9 @@ MonoBehaviour:
   attack: 25
   defense: 30
   id: 2
+  smashAttack: 10
+  upperAttack: 0
   bonusAttack: 5
   bonusDefense: 10
-  bonusAttackChance: 10
-  bonusDefenseChance: 5
+  critHitChance: 10
+  critDefChance: 5

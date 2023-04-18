@@ -161,7 +161,6 @@ MonoBehaviour:
   reflecting: 0
   phantomDashing: 0
   dashing: 0
-  storedDamage: {x: 0, y: 0}
   frozen: 0
   dangerMode: 0
   attack: 0
@@ -170,17 +169,16 @@ MonoBehaviour:
   maxMeter: 90
   currentMeter: 0
   phantomDashCost: 30
-  parryCost: 45
+  reflectCost: 0
   launchSpeed: 300
   currentStamina: 0
   lad: 0
   decayRate: 0
-  parryTime: 0
   bonusAttack: 0
   bonusDefense: 0
   mWheel: {fileID: 11400000, guid: 78821839b0a085e4eb46c8f886eacea2, type: 2}
   cWheel: {fileID: 11400000, guid: fb0e9217f5b929248ae411cef3fcef45, type: 2}
-  track: {fileID: 11400000, guid: 1067b987818c7b640a5b289857bcd876, type: 2}
+  track: {fileID: 11400000, guid: 425a1b7b5e8912742a3585520b3f2fdc, type: 2}
   driver: {fileID: 11400000, guid: e63aa0059bf32f441b0b2dbce5de952d, type: 2}
   ability: {fileID: 0}
   launched: 0
@@ -197,6 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliding: 0
+  hitStopTime: 0.05
+  critHitStopTime: 0.2
 --- !u!114 &1522800055300454041
 MonoBehaviour:
   m_ObjectHideFlags: 0

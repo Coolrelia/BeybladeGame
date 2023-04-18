@@ -18,4 +18,4 @@ MonoBehaviour:
   speed: 50
   decayRate: 2.5
   lad: 5
-  material: 1
+  material: 2

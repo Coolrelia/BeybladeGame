@@ -27,8 +27,15 @@ public class Beyblade : MonoBehaviour
     public float attack;
     public float defense;
     public float stamina;
-    public int maxMeter;
+    public float height;
+    public float critHitChance;
+    public float critDefChance;
+    public float smashAttackChance;
+    public float upperAttackChance;
+
+    [Header("Meter")]
     public int currentMeter;
+    public int maxMeter;
     public int phantomDashCost;
     public int reflectCost;
 
@@ -51,6 +58,7 @@ public class Beyblade : MonoBehaviour
     private bool ladActivated = false;
     private bool opponentFound = false;
     private bool roundReset = false;
+    private bool heightBonusesSet = false;
     public bool launched = false;
 
     private void Awake()
@@ -62,12 +70,8 @@ public class Beyblade : MonoBehaviour
         collision = GetComponent<BeybladeCollision>();
         rend = GetComponent<SpriteRenderer>();
 
-        rend.sprite = mWheel.sprite;
-        attack = mWheel.attack;
-        defense = mWheel.defense + driver.defense;
-        stamina = driver.stamina;
-        lad = driver.lad;
-        decayRate = driver.decayRate;
+        SetStats();
+
         if (!cWheel.ability) return;
         GameObject abl = Instantiate(cWheel.ability.gameObject, transform);
         ability = abl;
@@ -103,9 +107,69 @@ public class Beyblade : MonoBehaviour
 
         opponentFound = true;
     }
+    private void SetStats()
+    {
+        // Core Stats
+        rend.sprite = mWheel.sprite;
+        attack = mWheel.attack;
+        defense = mWheel.defense + driver.defense;
+        stamina = driver.stamina;
+        lad = driver.lad;
+        decayRate = driver.decayRate;
+        height = track.height;
+        
+        // Critical Stats
+        critHitChance = mWheel.critHitChance + track.critHitChance;
+        critDefChance = mWheel.critDefChance + track.critDefChance;
+        bonusAttack = mWheel.bonusAttack + track.bonusAttack;
+        bonusDefense = mWheel.bonusDefense + track.bonusDefense;
+
+        // Attack Variant Stats
+        smashAttackChance = mWheel.smashAttack;
+        upperAttackChance = mWheel.upperAttack;
+    }
+    private void SetHeightBonuses()
+    {
+        // if we are shorter than our opponent, increase upper attack
+        // the smaller the height difference, the higher the smash attack increase
+        if (!opponent) return;
+        if (heightBonusesSet) return;
+
+        float heightDifference = height - opponent.GetComponent<Beyblade>().height;
+        if (heightDifference < 0) upperAttackChance += Mathf.Abs(heightDifference / 2);
+
+        switch (Mathf.Abs(heightDifference))
+        {
+            case 0:
+                smashAttackChance += 20;
+                break;
+            case 5:
+                smashAttackChance += 15;
+                break;
+            case 15:
+                smashAttackChance += 10;
+                break;
+            case 20: 
+                smashAttackChance += 10;
+                break;
+            case 25:
+                smashAttackChance += 5;
+                break;
+            case 30: 
+                smashAttackChance += 5;
+                break;
+            case 40:
+                smashAttackChance += 5;
+                break;
+        }
+
+        heightBonusesSet = true;
+        print("bonuses set");
+    }
 
     private IEnumerator Launch()
     {
+        SetHeightBonuses();
         ResetBeyblade();
         launched = true;
         dangerMode = false;

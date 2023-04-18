@@ -10,9 +10,13 @@ public class MetalWheel : ScriptableObject
     public float defense;
     public int id;
 
+    [Header("Attack Type")]
+    public float smashAttack;
+    public float upperAttack;
+
     [Header("Chance Bonuses")]
     public float bonusAttack;
     public float bonusDefense;
-    public float bonusAttackChance;
-    public float bonusDefenseChance;
+    public float critHitChance;
+    public float critDefChance;
 }
